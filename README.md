@@ -1,5 +1,5 @@
 Hello! World！
-lean dfy_python_essential 
+learn dfy_python_essential 
 Test！
 
 
