@@ -8,3 +8,6 @@ print(lists[-1])
 
 lists[0] = 'yanghoo'
 print(lists)
+
+lists.append(900)
+print(lists)
