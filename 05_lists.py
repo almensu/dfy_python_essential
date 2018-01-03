@@ -5,3 +5,6 @@ print(lists)
 
 print(lists[0])
 print(lists[-1])
+
+lists[0] = 'yanghoo'
+print(lists)
