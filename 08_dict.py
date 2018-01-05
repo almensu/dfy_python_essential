@@ -42,3 +42,20 @@ for a in dict.values():
 print('------')
 for a in set(dict.values()):
     print(a)
+
+
+data = {
+    1: "A",
+    2: "B",
+    3: "C",
+    4: "A",
+    5: "D",
+}
+
+match_data = {}
+
+for (key, value) in data.items():
+    if value == 'A':
+        match_data[key] = value
+
+print(match_data)
