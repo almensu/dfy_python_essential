@@ -38,21 +38,32 @@
 # #创建字典
 # favorite_places = {'张三':['上海','北京','广州'],'李四':['九寨沟','张家界','鼓浪屿'],'东方耀':['长沙', '上海', '深圳']}
 
-favorite_places = {'张三':['上海','北京','广州'],
-                   '李四':['九寨沟','张家界','鼓浪屿'],
-                   '东方耀':['长沙', '上海', '深圳']
-}
+# favorite_places = {'张三':['上海','北京','广州'],
+#                    '李四':['九寨沟','张家界','鼓浪屿'],
+#                    '东方耀':['长沙', '上海', '深圳']
+# }
+#
+# name_in = input('请输入你的名字 ：')
+#
+# while True:
+#     if name_in == 'q':
+#         break
+#     else:
+#         for name, places in favorite_places.items():
+#             print(name, ':', places)
+#         break
 
-name_in = input('请输入你的名字 ：')
 
-while True:
-    if name_in == 'q':
-        break
-    else:
-        for name, places in favorite_places.items():
-            print(name, ':', places)
-        break
+# 第三题：
+# 99乘法表
+#    用for循环打印99乘法表
+#    用while
+#    1x1 =1
+#    1x2 = 2 2x2 = 4
 
 
-
+for x in range(1, 10):
+    for y in range(1, x+1):
+        print('{0}x{1}={2}'.format(x, y, x*y), end = '')
+        print('\n')
 
