@@ -83,12 +83,44 @@
 # 从键盘输入一个字符串，将小写字母全部转换成大写字母,
 #     将字符串以列表的形式输出(如果字符串包含整数,转为整型)?
 
-str1 = input('输入小写字母：')
-dict1 = []
+# str1 = input('输入小写字母：')
+# dict1 = []
+#
+# for s in str1:
+#     if str1.isdecimal():
+#         dict1.append(int(s))
+#     else:
+#         dict1.append(str1.upper())
+# print(dict1)
 
-for s in str1:
-    if str1.isdecimal():
-        dict1.append(int(s))
-    else:
-        dict1.append(str1.upper())
-print(dict1)
+# 第六题：
+# 随机输入8位以内的的正整数，要求：一、求它是几位数，二、逆序打印出各位数字。
+
+nums = input('请随机输入8位以内的的正整数： ')
+str1 = ''
+if len(nums) <= 8:
+    int1 = int(len(nums))
+    print('它是', int1, '位数。')
+    # 或者这样拼接
+    print('它是{0}位数'.format(int1))
+
+    # 方法一
+    for char in list(reversed(nums)):
+        str1 += char
+    print(str1)
+
+    # 方法二
+    char_reversed = nums[::-1]
+    print('逆序数字是：{0}'.format(char_reversed))
+
+else:
+    print('请输入8位以内的的正整数！！')
+
+
+
+
+
+
+
+
+
