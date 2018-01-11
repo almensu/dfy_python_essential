@@ -62,8 +62,33 @@
 #    1x2 = 2 2x2 = 4
 
 
-for x in range(1, 10):
-    for y in range(1, x+1):
-        print('{0}x{1}={2}'.format(x, y, x*y), end = '')
-        print('\n')
+# for x in range(1, 10):
+#     for y in range(1, x+1):
+#         print('{0}x{1}={2}'.format(x, y, x*y), end = '')
+#         print('\n')
 
+
+# 第四题：
+# 1-100的和
+#     1+2+3+4+...+100 = ?
+#     range(1,101)
+
+# result = 0
+# for r in range(1, 101):
+#     result += r
+#     print(result)
+
+
+# 第五题：
+# 从键盘输入一个字符串，将小写字母全部转换成大写字母,
+#     将字符串以列表的形式输出(如果字符串包含整数,转为整型)?
+
+str1 = input('输入小写字母：')
+dict1 = []
+
+for s in str1:
+    if str1.isdecimal():
+        dict1.append(int(s))
+    else:
+        dict1.append(str1.upper())
+print(dict1)
