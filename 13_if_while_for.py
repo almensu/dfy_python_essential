@@ -186,4 +186,84 @@
 
 
 #----------------------------
+# 第十一题：
+# 打印出所有的“水仙花数”，所谓“水仙花数”是指一个三位数，
+# 其各位数字立方和等于该数本身。
+# 例如：153是一个“水仙花数”，因为153=1的三次方＋5的三次方＋3的三次方。
+# 程序分析：利用for循环控制100-999个数，每个数分解出个位，十位，百位。
 
+
+# n = 153
+#
+# print(n//100)
+# print(n%100//10)
+# print(n%100%10)
+
+# 未完成
+
+
+#----------------------------
+# 第十二题：
+# 打印菱形       *
+
+
+
+
+----------------------------
+第十三题：
+一个5位数，判断它是不是回文数。即12321是回文数，
+个位与万位相同，十位与千位相同。
+
+ge = wan
+shi = qian
+bai = range(0, 10)
+
+for i in range(0, 99999):
+    if i == str(ge) + str(shi) + str(bai) + str(qian) + str(wan):
+        print(i)
+
+
+
+老师的方法
+
+nums = input('输入5位数')
+if nums[0] == nums[4] and nums[1] == nums[3]:
+    print('这是回文数')
+else:
+    print('这不是')
+
+
+我的方法
+nums5 = []
+huiwenshu = []
+
+nums = list(range(100000))
+for i in nums:
+    if len(str(i)) == 5:
+        nums5.append(i)
+    else:
+        pass
+
+for i in nums5:
+    # if i[0] == i[4] and i[1] == i[3]:
+    if str(i) == str(i)[::-1]:
+        huiwenshu.append(i)
+    else:
+        pass
+
+print(huiwenshu)
+我的方法
+
+
+我的调试
+nums = ['12322', '12321', '32123']
+shouji = []
+
+for i in nums:
+    if str(i) == str(i[::-1]):
+        shouji.append(i)
+    else:
+        print('bu是回文数')
+
+print(shouji)
+我的调试
